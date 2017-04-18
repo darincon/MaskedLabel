@@ -32,24 +32,6 @@ Then, run the following command:
 ```
 $ pod install
 ```
-
-### Carthage
-[Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
-
-You can install Carthage with [Homebrew](http://brew.sh/) using the following command:
-
-```
-$ brew update
-$ brew install carthage
-```
-
-To integrate MaskedLabel into your Xcode project using Carthage, specify it in your `Cartfile`:
-
-```
-github "MaskedLabel/MaskedLabel" ~> 0.9.0
-```
-Run `carthage` update to build the framework and drag the built `MaskedLabel.framework` into your Xcode project.
-
 ### Manually
 If you prefer not to use either of the aforementioned dependency managers, you can integrate MaskedLabel into your project manually.
 
