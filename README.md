@@ -1,5 +1,5 @@
 # MaskedLabel
-[![Version](https://img.shields.io/github/release/darincon/MaskedLabel.svg)](https://github.com/darincon/MaskedLabel/releases) ![Language](https://img.shields.io/badge/language-Swift%203-orange.svg) [![CocoaPods compatible](https://img.shields.io/cocoapods/v/MaskedLabel.svg)](https://cocoapods.org/pods/MaskedLabel) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) ![License](https://img.shields.io/github/license/darincon/MaskedLabel.svg?style=flat)
+![Language](https://img.shields.io/badge/swift3-compatible-4BC51D.svg?style=flat) ![Platform](https://img.shields.io/badge/platform-iOS-blue.svg?style=flat) [![CocoaPods compatible](https://img.shields.io/cocoapods/v/MaskedLabel.svg)](https://cocoapods.org/pods/MaskedLabel) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) ![License](https://img.shields.io/github/license/darincon/MaskedLabel.svg?style=flat)
 
 | Swift Version | MaskedLabel View Version |
 | ------------- | ------------------------ |
