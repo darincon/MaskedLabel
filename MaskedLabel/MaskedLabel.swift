@@ -1,6 +1,6 @@
 //
-//  GradientTextLabel.swift
-//  GradientTextLabel
+//  MaskedLabel.swift
+//  MaskedLabel
 //
 //  Created by Diego Rincon on 4/17/17.
 //  Copyright © 2017 Scire Studios. All rights reserved.
@@ -12,7 +12,7 @@ public enum FillOption {
     case background, text
 }
 
-open class GradientTextLabel: UILabel {
+open class MaskedLabel: UILabel {
 
     open var gradientColors: [UIColor]?
     open var gradientLocations: [CGFloat]?

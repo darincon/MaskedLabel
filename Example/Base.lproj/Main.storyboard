@@ -1,42 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GradientTextLabel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MaskedLabel" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERI-IV-MUg">
-                                <rect key="frame" x="140" y="323" width="94" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ILB-Ae-3I7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BACKGROUND COLOR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERI-IV-MUg" customClass="MaskedLabel" customModule="MaskedLabel">
+                                <rect key="frame" x="20" y="203.66666666666666" width="374" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1Da-i3-Ose">
+                                <rect key="frame" x="99.666666666666686" y="504" width="215" height="29"/>
+                                <segments>
+                                    <segment title="Fill Background"/>
+                                    <segment title="Fill Text"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="fillSegmentedControlDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="xJ4-0q-u9r"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gdi-Za-uS4">
+                                <rect key="frame" x="100" y="552" width="215" height="29"/>
+                                <segments>
+                                    <segment title="Use Color"/>
+                                    <segment title="Use Gradient"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="useSegmentedControlDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="W6A-hV-YU7"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="gdi-Za-uS4" firstAttribute="width" secondItem="1Da-i3-Ose" secondAttribute="width" id="3Gl-ol-3GM"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ERI-IV-MUg" secondAttribute="leading" id="BEA-wF-1h5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ERI-IV-MUg" secondAttribute="trailing" id="EIf-NM-ISR"/>
+                            <constraint firstItem="gdi-Za-uS4" firstAttribute="centerX" secondItem="1Da-i3-Ose" secondAttribute="centerX" id="GNf-br-GlL"/>
                             <constraint firstItem="ERI-IV-MUg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RiW-Q1-nLi"/>
-                            <constraint firstItem="ERI-IV-MUg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iVk-eI-S9Q"/>
+                            <constraint firstItem="ILB-Ae-3I7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="T08-Rm-N2K"/>
+                            <constraint firstItem="ILB-Ae-3I7" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="ef8-N5-KaF"/>
+                            <constraint firstItem="gdi-Za-uS4" firstAttribute="top" secondItem="1Da-i3-Ose" secondAttribute="bottom" constant="20" id="fjx-gV-xJP"/>
+                            <constraint firstItem="ILB-Ae-3I7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="hKY-wT-FQw"/>
+                            <constraint firstItem="1Da-i3-Ose" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="joj-ki-uLl"/>
+                            <constraint firstItem="1Da-i3-Ose" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="150" id="kfx-EF-goJ"/>
+                            <constraint firstItem="ILB-Ae-3I7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="smP-i5-h5f"/>
+                            <constraint firstItem="ERI-IV-MUg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="yxb-BK-KXN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="fillSegmentedControl" destination="1Da-i3-Ose" id="RFH-y5-BgB"/>
+                        <outlet property="maskedLabel" destination="ERI-IV-MUg" id="ItK-u7-enp"/>
+                        <outlet property="useSegmentedControl" destination="gdi-Za-uS4" id="AvX-Cf-dTg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="30.434782608695656" y="37.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="414" height="736"/>
+    </resources>
 </document>

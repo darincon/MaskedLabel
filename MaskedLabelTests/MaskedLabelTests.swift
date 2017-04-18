@@ -1,6 +1,6 @@
 //
-//  GradientTextLabelTests.swift
-//  GradientTextLabelTests
+//  MaskedLabelTests.swift
+//  MaskedLabelTests
 //
 //  Created by Diego Rincon on 4/17/17.
 //  Copyright © 2017 Scire Studios. All rights reserved.
@@ -8,25 +8,25 @@
 
 import XCTest
 
-class GradientTextLabelTests: XCTestCase {
+class MaskedLabelTests: XCTestCase {
     
-    var gradientTextLabel: GradientTextLabel?
+    var maskedLabel: MaskedLabel?
     
     override func setUp() {
         super.setUp()
         
-        gradientTextLabel = GradientTextLabel()
+        maskedLabel = MaskedLabel()
     }
     
     func testNoGradientColors() {
-        gradientTextLabel?.gradientColors = [UIColor]()
+        maskedLabel?.gradientColors = [UIColor]()
         
-        XCTAssertNil(gradientTextLabel?.colorComponents)
+        XCTAssertNil(maskedLabel?.colorComponents)
     }
     
     func testOneGradientColor() {
-        gradientTextLabel?.gradientColors = [UIColor.red]
-        let colorComponents = gradientTextLabel?.colorComponents
+        maskedLabel?.gradientColors = [UIColor.red]
+        let colorComponents = maskedLabel?.colorComponents
         
         XCTAssertEqual(colorComponents?.count, 8)
         
@@ -44,10 +44,10 @@ class GradientTextLabelTests: XCTestCase {
     }
     
     func testTwoGradientColors() {
-        gradientTextLabel?.gradientColors = [UIColor.red, UIColor.green]
-        let colorComponents = gradientTextLabel?.colorComponents
+        maskedLabel?.gradientColors = [UIColor.red, UIColor.green]
+        let colorComponents = maskedLabel?.colorComponents
         
-        XCTAssertEqual(gradientTextLabel?.colorComponents?.count, 8)
+        XCTAssertEqual(colorComponents?.count, 8)
         
         // Test color component of the first color
         XCTAssertEqual(colorComponents?[0], 1.0)
@@ -63,10 +63,10 @@ class GradientTextLabelTests: XCTestCase {
     }
     
     func testThreeGradientColors() {
-        gradientTextLabel?.gradientColors = [UIColor.red, UIColor.green, UIColor.blue]
-        let colorComponents = gradientTextLabel?.colorComponents
+        maskedLabel?.gradientColors = [UIColor.red, UIColor.green, UIColor.blue]
+        let colorComponents = maskedLabel?.colorComponents
         
-        XCTAssertEqual(gradientTextLabel?.colorComponents?.count, 12)
+        XCTAssertEqual(colorComponents?.count, 12)
         
         // Test color component of the first color
         XCTAssertEqual(colorComponents?[0], 1.0)
@@ -88,10 +88,10 @@ class GradientTextLabelTests: XCTestCase {
     }
     
     func testSixGradientColors() {
-        gradientTextLabel?.gradientColors = [UIColor.red, UIColor.green, UIColor.blue, UIColor.orange, UIColor.brown, UIColor.purple]
-        let colorComponents = gradientTextLabel?.colorComponents
+        maskedLabel?.gradientColors = [UIColor.red, UIColor.green, UIColor.blue, UIColor.orange, UIColor.brown, UIColor.purple]
+        let colorComponents = maskedLabel?.colorComponents
         
-        XCTAssertEqual(gradientTextLabel?.colorComponents?.count, 24)
+        XCTAssertEqual(colorComponents?.count, 24)
         
         // Test color component of the first color
         XCTAssertEqual(colorComponents?[0], 1.0)

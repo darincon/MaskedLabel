@@ -13,11 +13,11 @@
 		F873ECE71EA57AE4004A6EBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F873ECD81EA57A26004A6EBE /* Assets.xcassets */; };
 		F873ECFF1EA5C769004A6EBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F873ECFD1EA5C769004A6EBE /* Main.storyboard */; };
 		F873ED031EA5CDD3004A6EBE /* CGContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F873ED011EA5CDD3004A6EBE /* CGContext+Extensions.swift */; };
-		F873ED041EA5CDD3004A6EBE /* MaskedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F873ED021EA5CDD3004A6EBE /* MaskedLabel.swift */; };
 		F873ED081EA5CDE7004A6EBE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F873ED061EA5CDE7004A6EBE /* Info.plist */; };
 		F873ED0A1EA5CF99004A6EBE /* MaskedLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F873ED071EA5CDE7004A6EBE /* MaskedLabelTests.swift */; };
 		F873ED0B1EA5CFDC004A6EBE /* CGContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F873ED011EA5CDD3004A6EBE /* CGContext+Extensions.swift */; };
-		F873ED0C1EA5CFDF004A6EBE /* MaskedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F873ED021EA5CDD3004A6EBE /* MaskedLabel.swift */; };
+		F873ED0E1EA5DC49004A6EBE /* MaskedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F873ED0D1EA5DC49004A6EBE /* MaskedLabel.swift */; };
+		F873ED0F1EA5DC49004A6EBE /* MaskedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F873ED0D1EA5DC49004A6EBE /* MaskedLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +40,9 @@
 		F873ECEF1EA5A0CB004A6EBE /* MaskedLabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaskedLabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F873ECFE1EA5C769004A6EBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F873ED011EA5CDD3004A6EBE /* CGContext+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGContext+Extensions.swift"; sourceTree = "<group>"; };
-		F873ED021EA5CDD3004A6EBE /* MaskedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskedLabel.swift; sourceTree = "<group>"; };
 		F873ED061EA5CDE7004A6EBE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F873ED071EA5CDE7004A6EBE /* MaskedLabelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskedLabelTests.swift; sourceTree = "<group>"; };
+		F873ED0D1EA5DC49004A6EBE /* MaskedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskedLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				F873ED011EA5CDD3004A6EBE /* CGContext+Extensions.swift */,
-				F873ED021EA5CDD3004A6EBE /* MaskedLabel.swift */,
+				F873ED0D1EA5DC49004A6EBE /* MaskedLabel.swift */,
 			);
 			path = MaskedLabel;
 			sourceTree = "<group>";
@@ -219,7 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F873ED031EA5CDD3004A6EBE /* CGContext+Extensions.swift in Sources */,
-				F873ED041EA5CDD3004A6EBE /* MaskedLabel.swift in Sources */,
+				F873ED0E1EA5DC49004A6EBE /* MaskedLabel.swift in Sources */,
 				F873ECE41EA57A26004A6EBE /* ViewController.swift in Sources */,
 				F873ECDF1EA57A26004A6EBE /* AppDelegate.swift in Sources */,
 			);
@@ -229,7 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F873ED0C1EA5CFDF004A6EBE /* MaskedLabel.swift in Sources */,
+				F873ED0F1EA5DC49004A6EBE /* MaskedLabel.swift in Sources */,
 				F873ED0A1EA5CF99004A6EBE /* MaskedLabelTests.swift in Sources */,
 				F873ED0B1EA5CFDC004A6EBE /* CGContext+Extensions.swift in Sources */,
 			);
@@ -365,7 +365,7 @@
 				DEVELOPMENT_TEAM = Q6MVMV6FGT;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.scirestudios.GradientTextLabel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scirestudios.MaskedLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -378,7 +378,7 @@
 				DEVELOPMENT_TEAM = Q6MVMV6FGT;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.scirestudios.GradientTextLabel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scirestudios.MaskedLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -390,7 +390,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MaskedLabelTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.scirestudios.GradientTextLabelTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scirestudios.MaskedLabelTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaskedLabel.app/MaskedLabel";
@@ -403,7 +403,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MaskedLabelTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.scirestudios.GradientTextLabelTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scirestudios.MaskedLabelTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaskedLabel.app/MaskedLabel";

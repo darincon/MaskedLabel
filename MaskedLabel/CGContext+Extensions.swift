@@ -1,6 +1,6 @@
 //
 //  CGContext+Extensions.swift
-//  GradientTextLabel
+//  MaskedLabel
 //
 //  Created by Diego Rincon on 4/17/17.
 //  Copyright © 2017 Scire Studios. All rights reserved.
@@ -11,7 +11,7 @@ import UIKit
 internal extension CGContext {
     func mask(with option: FillOption) -> CGImage? {
         guard let image = makeImage() else {
-            print("******** WARNING (GradientTextLabel): Unable to create image from graphics context")
+            print("******** WARNING (MaskedLabel): Unable to create image from graphics context")
             return nil
         }
         
@@ -33,7 +33,7 @@ internal extension CGContext {
                                         colorComponents: components,
                                         locations: locations,
                                         count: components.count / 4) else {
-                                            print("******** WARNING (GradientTextLabel): Unable to create gradient from gradient colors")
+                                            print("******** WARNING (MaskedLabel): Unable to create gradient from gradient colors")
                                             return
         }
         
@@ -58,7 +58,7 @@ internal extension CGContext {
                                     provider: dataProvider,
                                     decode: image.decode,
                                     shouldInterpolate: true) else {
-                                        print("******** WARNING (GradientTextLabel): Unable to create image mask from graphics context")
+                                        print("******** WARNING (MaskedLabel): Unable to create image mask from graphics context")
                                         return nil
         }
         

@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  GradientTextLabel
+//  MaskedLabel
 //
 //  Created by Diego Rincon on 4/17/17.
 //  Copyright © 2017 Scire Studios. All rights reserved.
