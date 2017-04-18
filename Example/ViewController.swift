@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var fillSegmentedControl: UISegmentedControl!
     @IBOutlet weak var useSegmentedControl: UISegmentedControl!
     
-    var gradientColors = [UIColor(red:0.79, green:0.30, blue:0.64, alpha:1.00),
+    let gradientColors = [UIColor(red:0.79, green:0.30, blue:0.64, alpha:1.00),
                           UIColor(red:0.08, green:0.33, blue:0.82, alpha:1.00)]
     
     var labelText: String {

@@ -14,11 +14,31 @@ public enum FillOption {
 
 open class MaskedLabel: UILabel {
 
+    /// An array of UIColor that defines the gradient. If it contains only one
+    /// element, it will be applied as start and end color. In case this property
+    /// is nil or an empty array, the value of fillColor will be used instead.
     open var gradientColors: [UIColor]?
+    
+    /// The location for each color provided in components. Each location must be a
+    /// CGFloat value in the range of 0 to 1, inclusive. If 0 and 1 are not in the 
+    /// locations array, Quartz uses the colors provided that are closest to 0 and
+    /// 1 for those locations.
     open var gradientLocations: [CGFloat]?
+    
+    /// The coordinate that defines the starting point of the gradient.
     open var startPoint: CGPoint?
+    
+    /// The coordinate that defines the ending point of the gradient.
     open var endPoint: CGPoint?
+    
+    /// Set this property when a constant color is needed instead of a gradient. 
+    /// If both this property and gradientColors are set, this color is omitted 
+    /// and the gradient will be applied to the text. The default value is
+    /// UIColor.black.
     open var fillColor: UIColor = UIColor.black
+    
+    /// A constant indicating if the gradient, or color, will be applied to the 
+    /// label's background, making the text transparent, or to the text.
     open var fillOption = FillOption.text
     
     // TODO: Change to private
