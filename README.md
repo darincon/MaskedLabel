@@ -24,7 +24,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'MaskedLabel', '~> 0.9.0'
+    pod 'MaskedLabel', '~> 0.9.2'
 end
 ```
 Then, run the following command:
@@ -46,7 +46,7 @@ $ brew install carthage
 To integrate MaskedLabel into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```
-github "darincon/MaskedLabel" ~> 0.9.0
+github "darincon/MaskedLabel" ~> 0.9.2
 ```
 Run `carthage update` to build the framework and drag the built `MaskedLabel.framework` into your Xcode project.
 

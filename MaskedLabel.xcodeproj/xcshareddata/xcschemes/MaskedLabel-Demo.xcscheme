@@ -14,9 +14,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F873ED341EA91550004A6EBE"
-               BuildableName = "MaskedLabel.framework"
-               BlueprintName = "MaskedLabel"
+               BlueprintIdentifier = "F873ECC01EA5797B004A6EBE"
+               BuildableName = "MaskedLabel-Demo.app"
+               BlueprintName = "MaskedLabel-Demo"
+               ReferencedContainer = "container:MaskedLabel.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F873ECEE1EA5A0CB004A6EBE"
+               BuildableName = "MaskedLabelTests.xctest"
+               BlueprintName = "MaskedLabelTests"
                ReferencedContainer = "container:MaskedLabel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,7 +42,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F873ECEE1EA5A0CB004A6EBE"
+               BuildableName = "MaskedLabelTests.xctest"
+               BlueprintName = "MaskedLabelTests"
+               ReferencedContainer = "container:MaskedLabel.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F873ECC01EA5797B004A6EBE"
+            BuildableName = "MaskedLabel-Demo.app"
+            BlueprintName = "MaskedLabel-Demo"
+            ReferencedContainer = "container:MaskedLabel.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -42,15 +75,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F873ED341EA91550004A6EBE"
-            BuildableName = "MaskedLabel.framework"
-            BlueprintName = "MaskedLabel"
+            BlueprintIdentifier = "F873ECC01EA5797B004A6EBE"
+            BuildableName = "MaskedLabel-Demo.app"
+            BlueprintName = "MaskedLabel-Demo"
             ReferencedContainer = "container:MaskedLabel.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,15 +94,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F873ED341EA91550004A6EBE"
-            BuildableName = "MaskedLabel.framework"
-            BlueprintName = "MaskedLabel"
+            BlueprintIdentifier = "F873ECC01EA5797B004A6EBE"
+            BuildableName = "MaskedLabel-Demo.app"
+            BlueprintName = "MaskedLabel-Demo"
             ReferencedContainer = "container:MaskedLabel.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
